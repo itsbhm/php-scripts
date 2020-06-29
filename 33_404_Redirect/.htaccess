@@ -1,0 +1,1 @@
+ErrorDocument 404 http://localhost:80/33_404_Redirect/404.html

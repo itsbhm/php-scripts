@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if IE 7]><html lang="en" class="ie7"><![endif]-->
+<!--[if IE 8]><html lang="en" class="ie8"><![endif]-->
+<!--[if IE 9]><html lang="en" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><html lang="en"><![endif]-->
+<!--[if !IE]><html lang="en"><![endif]-->
+<head>
+	<meta charset="utf-8">
+	<script src="js/lib/modernizr.js"></script>
+	
+	<!-- The title of your site -->
+	<title>Magnum - Creative Portfolio Template</title>
+	
+	<!-- Always make sure to check the robots tag -->
+	<meta name="robots" content="index, nofollow">
+	<meta name="description" content="The description of your website">
+	<meta name="keywords" content="the, website, keywords">
+	
+	<!-- Essential viewport settings -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<!-- Essential stylesheets -->
+	<link rel="stylesheet" href="css/loader.css">
+	<link rel="stylesheet" href="css/lib/essentials.css">
+	<link rel="stylesheet" href="css/lib/ytplayer.css">
+	<link rel="stylesheet" href="css/lib/font-awesome.min.css">
+	<link rel="stylesheet" href="css/lib/magnific-popup.css">
+	<link rel="stylesheet" href="css/lib/jquery.bxslider.css">
+	
+	<!-- Main stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+
+<body>
+
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div id="status">&nbsp;</div>
+	</div>
+
+
+
+
+	<!-- Home with advanced controlled background video -->
+	<div id="home" class="home-wrap video">
+		<div class="home-content">
+
+
+			<!-- We're going to show this before the movie -->
+			<div id="show-before" class="text-white">
+				<hr>
+
+
+				<!-- Introduction -->
+				<h5 class="bigtext serif italic margin-bottom">Hello!</h5>
+				<h1 class="fittext uppercase bold">Let me tell<br>you a story</h1>
+
+
+				<!-- Play button for the video -->
+				<a class="play-btn" onclick="jQuery('#video').playYTP()">
+					<i class="fa fa-play"></i>
+				</a>
+
+
+				<hr>
+			</div>
+
+
+			<!-- We're going to show this after the movie and on mobile devices -->
+			<div id="show-after" class="text-white">
+
+
+				<!-- Logo and text -->
+				<img src="images/magnum-logo-home.png" alt="magnum-logo-home" width="62" height="48">
+				<h1 class="bigtext letterspace uppercase bold no-margin">Magnum</h1>
+				<h6 class="bigtext serif italic margin-bottom">Premium Stuff</h6>
+
+
+				<!-- Home menu -->
+				<ul class="home-menu">
+					<li>
+						<a href="#work" class="smoothscroll">
+							<i class="fa fa-briefcase"></i>
+							<b>Work</b>
+							<em>What I've Made</em>
+						</a>
+					</li>
+					<li>
+						<a href="#about" class="smoothscroll">
+							<i class="fa fa-thumbs-o-up"></i>
+							<b>About</b>
+							<em>Personal Facts</em>
+						</a>
+					</li>
+					<li>
+						<a href="#services" class="smoothscroll">
+							<i class="fa fa-star"></i>
+							<b>Services</b>
+							<em>You &amp; Me = Awesome</em>
+						</a>
+					</li>
+					<li>
+						<a href="#contact" class="smoothscroll">
+							<i class="fa fa-glass"></i>
+							<b>Contact</b>
+							<em>Let's Skip the Coffee</em>
+						</a>
+					</li>
+				</ul>
+
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Background with youtube video -->
+	<div class="video-container">
+		<a id="video" class="fullscreen-video" data-property="{videoURL:'http://www.youtube.com/watch?v=RdIh8GiVR9I'}">The Video</a>
+	</div>
+
+
+	<!-- Video controls -->
+	<div class="video-controls">
+		<button onclick="jQuery('#video').pauseYTP()"><i class="fa fa-pause"></i></button>
+		<button onclick="jQuery('#video').toggleVolume()"><i class="fa fa-volume-up"></i></button>
+	</div>
+
+
+	<!-- Background image to display before the video -->
+	<div style="background-image: url('images/placeholder-fullscreen.png');" class="fullscreen-img img-before"></div>
+
+
+	<!-- Background image to display after the video and on mobile devices -->
+	<div style="background-image: url('images/placeholder-fullscreen.png');" class="fullscreen-img img-after"></div>
+
+
+
+
+	<!-- Menu -->
+	<div class="main-menu fixedmenu">
+		<div class="menu-wrap">
+
+
+			<!-- Your symbolic or typographic logo -->
+			<a href="#home" class="smoothscroll"><img src="images/magnum-logo-color.png" alt="magnum logo color" width="38" height="30" class="menu-logo"></a>
+			<!--<h1><a href="#home" class="smoothscroll">Magnum</a></h1>-->
+
+
+			<!-- The menu toggle -->
+			<input type="checkbox" id="toggle" />
+			<label for="toggle" class="toggle"></label>
+
+
+			<!-- The menu items -->
+			<ul class="menu">
+				<li><a href="#home" class="smoothscroll">Home</a></li>
+				<li><a href="#work" class="smoothscroll">Work</a></li>
+				<li><a href="#about" class="smoothscroll">About</a></li>
+				<li><a href="#services" class="smoothscroll">Services</a></li>
+				<li><a href="#contact" class="smoothscroll">Contact</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+
+
+
+
+	<!-- Introduction text -->
+	<section id="introduction" class="introduction">
+		<div class="row">
+			<div class="ten columns center">
+
+
+				<!-- The title -->
+				<div class="title">
+					<h1>It's nice to meet you</h1>
+					<hr>
+				</div>
+
+
+				<!-- Text and a button -->
+				<p class="big thin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare sem sit amet mauris bibendum, ac fringilla quam eleifend. Praesent elit tellus, venenatis in lorem ac, porta accumsan sapien. Cras malesuada feugiat magnum.</p>
+				<p><a href="#work" class="button outline smoothscroll">View my work</a></p>
+
+
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<!-- Featured work -->
+	<section id="work" class="featured-work">
+
+
+		<!-- The title -->
+		<div class="row">
+			<div class="twelve columns title">
+				<h1>Featured Work</h1>
+				<hr>
+			</div>
+		</div>
+
+
+		<!-- Featured work slider -->
+		<div class="featured-work-slider">
+			<ul class="bxslider" id="featured-work-slider">
+
+
+				<!-- Slide 1 -->
+				<li>
+					<div style="background-image: url('images/placeholder-header.png')" class="header">
+						<div class="header-center">
+							<div class="centerdiv text-white">
+								<h4 class="bigtext uppercase letterspace bold">The Essentials</h4>
+								<h6 class="bigtext serif italic">To Create Awesome Designs</h6>
+							</div>
+						</div>
+					</div>
+				</li>
+
+
+				<!-- Slide 2 -->
+				<li>
+					<div style="background-image: url('images/placeholder-header.png')" class="header">
+						<div class="header-center">
+							<div class="centerdiv text-white">
+								<h4 class="bigtext uppercase letterspace bold">Tell a Story</h4>
+								<h6 class="bigtext serif italic">Share Your Creativity With The World</h6>
+							</div>
+						</div>
+					</div>
+				</li>
+
+
+				<!-- Slide 3 -->
+				<li>
+					<div style="background-image: url('images/placeholder-header.png')" class="header">
+						<div class="header-center">
+							<div class="centerdiv text-white">
+								<h4 class="bigtext uppercase letterspace bold">Get Connected</h4>
+								<h6 class="bigtext serif italic">Meet New Clients &amp; Future Friends</h6>
+							</div>
+						</div>
+					</div>
+				</li>
+
+
+			</ul>
+		</div>
+
+
+		<!-- Intro text -->
+		<div class="row">
+			<div class="ten columns center">
+				<h2 class="text-color">Details about Magnum</h2>
+				<p class="big thin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare sem sit amet mauris bibendum, ac fringilla quam eleifend. Praesent elit tellus, venenatis in lorem ac, porta accumsan sapien. Cras malesuada feugiat magnum.</p>
+			</div>
+		</div>
+
+
+		<!-- 3 Columns -->
+		<div class="row">
+
+
+			<!-- Column 1 -->
+			<div class="four columns">
+				<p><i class="fa fa-comments-o icon huge"></i></p>
+				<h4>The Request</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare sem sit amet mauris bibendum, ac fringilla quam eleifend. Praesent elit tellus, venenatis in lorem ac, porta accumsan sapien.</p>
+			</div>
+
+
+			<!-- Column 2 -->
+			<div class="four columns">
+				<p><i class="fa fa-lightbulb-o icon huge"></i></p>
+				<h4>The Idea</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare sem sit amet mauris bibendum, ac fringilla quam eleifend. Praesent elit tellus, venenatis in lorem ac, porta accumsan sapien.</p>
+			</div>
+
+
+			<!-- Column 3 -->
+			<div class="four columns">
+				<p><i class="fa fa-bolt icon huge"></i></p>
+				<h4>The Solution</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare sem sit amet mauris bibendum, ac fringilla quam eleifend.</p>
+				<p><a href="project.html" class="arrow-link">Read more</a></p>
+			</div>
+
+
+		</div>
+	</section>
+
+
+
+
+	<!-- More work -->
+	<section id="more-work" class="more-work">
+		<div class="row">
+			<div class="ten columns center margin-bottom">
+
+
+				<!-- The title -->
+				<div class="title">
+					<h1>More Work</h1>
+					<hr>
+				</div>
+
+
+			</div>
+		</div>
+
+
+		<!-- Thumbnails -->
+		<div class="row margin equal">
+
+
+			<!-- Portfolio thumb 1 -->
+			<div class="four columns medium-six columns small-twelve columns">
+				<div class="portfolio-thumb">
+					<a class="popup" href="images/placeholder-thumbnail.png">
+						<img src="images/placeholder-thumbnail.png" alt="placeholder-thumbnail">
+						<i class="fa fa-camera-retro"></i>
+						<b>Project Title</b>
+						<em>Simple Popup</em>
+					</a>
+				</div>
+			</div>
+
+
+			<!-- Portfolio thumb 2 -->
+			<div class="four columns medium-six columns small-twelve columns">
+				<div class="portfolio-thumb">
+					<a href="project.html">
+						<img src="images/placeholder-thumbnail.png" alt="placeholder-thumbnail">
+						<i class="fa fa-trophy"></i>
+						<b>Extremely Rare</b>
+						<em>Project Page</em>
+					</a>
+				</div>
+			</div>
+
+
+			<!-- Portfolio thumb 3 -->
+			<div class="four columns medium-six columns small-twelve columns">
+				<div class="portfolio-thumb">
+					<a class="popup" href="images/placeholder-thumbnail.png">
+						<img src="images/placeholder-thumbnail.png" alt="placeholder-thumbnail">
+						<i class="fa fa-font"></i>
+						<b>Good Times</b>
+						<em>Typography</em>
+					</a>
+				</div>
+			</div>
+
+
+			<!-- Portfolio thumb 4 -->
+			<div class="four columns medium-six columns small-twelve columns">
+				<div class="portfolio-thumb">
+					<a class="popup-youtube" href="http://www.youtube.com/watch?v=tDvBwPzJ7dY">
+						<img src="images/placeholder-thumbnail.png" alt="placeholder-thumbnail">
+						<i class="fa fa-film"></i>
+						<b>Automotive</b>
+						<em>YouTube Video</em>
+					</a>
+				</div>
+			</div>
+
+
+			<!-- Portfolio thumb 5 -->
+			<div class="four columns medium-six columns small-twelve columns">
+				<div class="portfolio-thumb">
+					<a class="popup" href="images/placeholder-thumbnail.png">
+						<img src="images/placeholder-thumbnail.png" alt="placeholder-thumbnail">
+						<i class="fa fa-desktop"></i>
+						<b>Magnum</b>
+						<em>Branding</em>
+					</a>
+				</div>
+			</div>
+
+
+			<!-- Portfolio thumb 6 -->
+			<div class="four columns medium-six columns small-twelve columns">
+				<div class="portfolio-thumb">
+					<a class="popup-vimeo" href="http://vimeo.com/27973852">
+						<img src="images/placeholder-thumbnail.png" alt="placeholder-thumbnail">
+						<i class="fa fa-film"></i>
+						<b>Traveling</b>
+						<em>Vimeo Video</em>
+					</a>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+
+
+
+	<!-- Call to action -->
+	<section class="call-to-action">
+		<div class="header small">
+			<div class="header-center">
+				<div class="centerdiv">
+					<h5 class="bigtext serif italic text-color">Let's talk about your new project</h5>
+					<p><a href="#contact" class="button outline white smoothscroll">Get in touch <i class="fa fa-smile-o"></i></a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<!-- About me -->
+	<section id="about" class="about">
+
+
+		<!-- The title -->
+		<div class="row">
+			<div class="twelve columns title">
+				<h1>About me</h1>
+				<hr>
+			</div>
+		</div>
+
+
+		<!-- About header -->
+		<div style="background-image: url('images/placeholder-header.png')" class="header">
+			<div class="header-center">
+				<div class="centerdiv text-white">
+
+
+					<!-- Text on the header -->
+					<h4 class="bigtext uppercase letterspace bold">This is my story</h4>
+					<h6 class="bigtext serif italic">So you get to know me better</h6>
+
+
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Circle avatar -->
+		<img src="images/placeholder-avatar.png" alt="placeholder-avatar" class="about-avatar">
+
+
+		<!-- About introduction -->
+		<div class="row">
+			<div class="ten columns center margin-bottom">
+				<h2 class="text-color">That would be me</h2>
+				<p class="big thin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare sem sit amet mauris bibendum, ac fringilla quam eleifend. Praesent elit tellus, venenatis in lorem ac, porta accumsan sapien. Cras malesuada feugiat magnum.</p>
+			</div>
+		</div>
+
+
+		<!-- 3 Columns -->
+		<div class="row">
+
+
+			<!-- Column 1 -->
+			<div class="four columns">
+				<h4>Why I <i class="fa fa-heart text-color"></i> Design</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare sem sit amet mauris bibendum, ac fringilla quam eleifend. Praesent elit tellus, venenatis in lorem ac, porta accumsan sapien. Cras malesuada feugiat magnum.</p>
+			</div>
+
+
+			<!-- Column 2 -->
+			<div class="four columns">
+				<h4>Why I <i class="fa fa-thumbs-o-down text-light"></i> Coffee</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare sem sit amet mauris bibendum, ac fringilla quam eleifend. Praesent elit tellus, venenatis in lorem ac, porta accumsan sapien. Cras malesuada feugiat magnum.</p>
+			</div>
+
+
+			<!-- Column 3 -->
+			<div class="four columns">
+				<h4>My Favourite Music</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare sem sit amet mauris bibendum, ac fringilla quam eleifend. Praesent elit tellus, venenatis in lorem ac, porta accumsan sapien. Cras malesuada feugiat magnum.</p>
+			</div>
+
+
+		</div>
+	</section>
+
+
+
+
+	<!-- Services -->
+	<section id="services" class="services">
+		<div class="row">
+			<div class="twelve columns">
+
+
+				<!-- The title -->
+				<div class="title">
+					<h1>Services</h1>
+					<hr>
+				</div>
+
+
+				<!-- Slider controls -->
+				<h2 class="text-color">How may I help you today?</h2>
+				<p>
+					<a id="services-prev" href="javascript:void(0)"><i class="fa fa-chevron-left icon arrow-next outline color attached"></i></a>
+					<a id="services-next" href="javascript:void(0)"><i class="fa fa-chevron-right icon arrow-prev outline color attached"></i></a>
+				</p>
+
+
+			</div>
+		</div>
+
+
+		<!-- Services slider -->
+		<div class="row">
+			<div class="list_carousel">
+				<ul id="services-slider">
+
+
+					<!-- Service 1 -->
+					<li class="service-item">
+						<img src="images/placeholder-service.png" alt="placeholder-service">
+						<i class="fa fa-trophy"></i>
+						<h4>Branding</h4>
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa branding.</p>
+						<h5 class="serif italic">Starting at $599,00</h5>
+						<ul>
+							<li>8 Concept Sketches</li>
+							<li>2 Premium Fonts</li>
+							<li>Free Burgers</li>
+						</ul>
+						<p><a href="#contact" class="button outline smoothscroll">Order service</a></p>
+					</li>
+
+
+					<!-- Service 2 -->
+					<li class="service-item">
+						<img src="images/placeholder-service.png" alt="placeholder-service">
+						<i class="fa fa-star"></i>
+						<h4>Graphic Design</h4>
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa design.</p>
+						<h5 class="serif italic">Starting at $699,00</h5>
+						<ul>
+							<li>16 Hours Designing</li>
+							<li>Card Designs Included</li>
+							<li>Free Soda's</li>
+						</ul>
+						<p><a href="#contact" class="button outline smoothscroll">Order service</a></p>
+					</li>
+
+
+					<!-- Service 3 -->
+					<li class="service-item">
+						<img src="images/placeholder-service.png" alt="placeholder-service">
+						<i class="fa fa-camera-retro"></i>
+						<h4>Photography</h4>
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa photo.</p>
+						<h5 class="serif italic">Starting at $799,00</h5>
+						<ul>
+							<li>8 Hours Shooting</li>
+							<li>Lightbox Effects</li>
+							<li>Free Candy</li>
+						</ul>
+						<p><a href="#contact" class="button outline smoothscroll">Order service</a></p>
+					</li>
+
+
+					<!-- Service 4 -->
+					<li class="service-item">
+						<img src="images/placeholder-service.png" alt="placeholder-service">
+						<i class="fa fa-desktop"></i>
+						<h4>Webdesign</h4>
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa webdesign.</p>
+						<h5 class="serif italic">Starting at $899,00</h5>
+						<ul>
+							<li>24 Hours Designing</li>
+							<li>Unlimited Colors</li>
+							<li>Free Pixels</li>
+						</ul>
+						<p><a href="#contact" class="button outline smoothscroll">Order service</a></p>
+					</li>
+
+
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<!-- Quotes -->
+	<section class="quote">
+		<div class="header medium">
+			<div class="header-center">
+				<div class="centerdiv text-white">
+					<ul id="quote-slider" class="bxslider">
+
+
+						<!-- Quote 1 -->
+						<li>
+							<h4 class="bigtext"><q>There's a difference between showing info and telling stories.</q></h4>
+							<h6 class="bigtext serif italic">&mdash; J. Doe, CEO Company Inc &mdash;</h6>
+						</li>
+
+
+						<!-- Quote 2 -->
+						<li>
+							<h4 class="bigtext"><q>Magnum is made to tell a story.</q></h4>
+							<h6 class="bigtext serif italic">&mdash; T. Sawyer, Freelance Developer &mdash;</h6>
+						</li>
+
+
+						<!-- Quote 3 -->
+						<li>
+							<h4 class="bigtext"><q>Design is where science and art break even</q></h4>
+							<h6 class="bigtext serif italic">&mdash; R. Mathew &mdash;</h6>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<a href="javascript:void(0)" id="quote-prev" class="bx-outer-prev"></a>
+		<a href="javascript:void(0)" id="quote-next" class="bx-outer-next"></a>
+	</section>
+
+
+
+
+	<!-- Contact -->
+	<section id="contact" class="contact">
+		<div class="row">
+			<div class="ten columns center">
+
+
+				<!-- The title -->
+				<div class="title">
+					<h1>Contact</h1>
+					<hr>
+				</div>
+
+
+				<!-- Intro text -->
+				<h2 class="text-color">Let's get in touch</h2>
+				<p class="big thin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare sem sit amet mauris bibendum, ac fringilla quam eleifend. Praesent elit tellus, venenatis in lorem ac, porta accumsan sapien. Cras malesuada feugiat magnum.</p>
+
+
+			</div>
+		</div>
+		<div class="row">
+
+
+			<!-- Succes message after sending the form, see also the php file around line 90 -->
+			<div class="twelve columns">
+				<div id="message"></div>
+			</div>
+
+
+		</div>
+		<div class="row">
+
+
+			<!-- The contactform -->
+			<form method="post" action="contact.php" name="contactform" id="contactform">
+				<fieldset>
+					<div class="six columns">
+
+
+						<!-- Name -->
+						<label for="name" accesskey="U"><i class="fa fa-user"></i></label>
+						<input name="name" type="text" id="name" size="30" value="" />
+
+
+						<!-- Email -->
+						<label for="email" accesskey="E"><i class="fa fa-envelope-o"></i></label>
+						<input name="email" type="text" id="email" size="30" value="" />
+
+
+						<!-- Phone -->
+						<label for="phone" accesskey="P"><i class="fa fa-phone"></i></label>
+						<input name="phone" type="text" id="phone" size="30" value="" />
+
+
+					</div>
+					<div class="six columns">
+
+
+						<!-- Comments / Message -->
+						<label for="comments" accesskey="C"><i class="fa fa-comment"></i></label>
+						<textarea name="comments" id="comments"></textarea>
+
+
+						<!-- Verification -->
+						<label for="verify" accesskey="V">3 + 1 =</label>
+						<input name="verify" type="text" id="verify" size="4" value="" class="input-verify" />
+
+
+					</div>
+					<div class="twelve columns">
+
+
+						<!-- Send button -->
+						<input type="submit" class="submit" id="submit" value="Send message" />
+
+
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</section>
+
+
+
+
+	<!-- The footer -->
+	<section class="footer-two">
+		<div class="row">
+			<div class="twelve columns">
+
+
+				<!-- Back to top button -->
+				<p><a href="#home" class="smoothscroll"><i class="fa fa-chevron-up icon arrow-top"></i></a></p>
+
+
+				<!-- Social icons -->
+				<p>
+					<a href="#"><i class="fa fa-twitter icon outline light"></i></a>
+					<a href="#"><i class="fa fa-facebook icon outline light"></i></a>
+					<a href="#"><i class="fa fa-dribbble icon outline light"></i></a>
+				</p>
+
+
+				<!-- Credits -->
+				<p class="text-light">Magnum&trade; by <a href="http://themeforest.net/user/Pixel-Stuff" target="blank" class="underline">PixelStuff</a><br>
+				&mdash; Made with <i class="fa fa-heart text-color"></i> on The Moon &mdash;</p>
+
+
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<!-- Javascript -->
+	<script src="js/lib/jquery.min.js"></script>
+	<script src="js/lib/jquery.fittext.js"></script>
+	<script src="js/lib/jquery.magnific-popup.min.js"></script>
+	<script src="js/lib/jquery.bxslider.min.js"></script>
+	<script src="js/lib/jquery.sticky.js"></script>
+	<script src="js/lib/jquery.equal.js"></script>
+	
+	<!-- Basic functions -->
+	<script src="js/main.js"></script>
+	
+	<!-- Specific functions for this page -->
+	<script src="js/lib/jquery.ytplayer.js"></script>
+	<script src="js/index.js"></script>
+	
+	<!-- Scripts for the services slider -->
+	<script src="js/lib/jquery.touchswipe.min.js"></script>
+	<script src="js/lib/jquery.caroufredsel.min.js"></script>
+	<script src="js/services-slider.js"></script>
+
+
+	<!-- Preloader -->
+	<script type="text/javascript">
+		//<![CDATA[
+		$(window).load(function() { // makes sure the whole site is loaded
+			$('#status').fadeOut(); // will first fade out the loading animation
+				$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+			$('body').delay(350).css({'overflow-y':'visible'});
+		})
+		//]]>
+	</script>
+
+
+</body>
+</html>

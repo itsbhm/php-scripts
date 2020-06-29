@@ -1,0 +1,75 @@
+/* Background color */
+.text-bg,
+.text-bg.color,
+a.button:hover,
+.button.color,
+.icon.color,
+a.button.outline.color:hover,
+a .icon:hover,
+a .icon.outline.color:hover,
+.bullet-pagination a,
+ul.home-menu li a:hover > i,
+a.play-btn:hover > i,
+.portfolio-thumb:hover i,
+li.service-item:hover i,
+#contactform input.submit,
+#contactform input[type="submit"][disabled],
+.fourofour a:hover > i,
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.slides-pagination a:hover,
+.slides-pagination a.current {
+background: #6ac0d5;
+}
+
+/* Color */
+a:hover,
+.text-color,
+h1.text-color,
+h2.text-color,
+h3.text-color,
+h4.text-color,
+h5.text-color,
+h6.text-color,
+p.text-color,
+.text-color h1,
+.text-color h2,
+.text-color h3,
+.text-color h4,
+.text-color h5,
+.text-color h6,
+.text-color p,
+q.colorq:before,
+q.colorq:after,
+a.arrow-link:after,
+.button.outline.color,
+.icon.outline.color,
+.main-menu h1 a,
+.toggle,
+.main-menu.white-menu .menu li a:hover,
+.icon.huge:hover,
+.serviceblock:hover i,
+#success_page h4 {
+color: #6ac0d5;
+}
+
+/* Border color */
+a.underline {
+border-bottom: 1px solid #6ac0d5;
+}
+
+.button.outline.color,
+.icon.outline.color,
+ul.home-menu li a:hover > i,
+#contactform input:focus,
+#contactform textarea:focus,
+#contactform select:focus,
+.fourofour a:hover > i {
+border: 2px solid #6ac0d5;
+}
+
+a.play-btn:hover > i,
+.icon.huge:hover,
+.serviceblock:hover i {
+border: 3px solid #6ac0d5;
+}

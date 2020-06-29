@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GeoLocation API</title>
+</head>
+<body>
+
+	<button onClick="getLocation()">Get Location</button>
+
+	<!-- Result -->
+	<div id="output"></div>
+
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript">
+		
+		var x = document.getElementById('output');
+
+		function getLocation(){
+			if(navigator.geolocation){
+				navigator.geolocation.getCurrentPosition(showPosition,showError);
+			}else{
+				x.innerHTML = "Not Supported, Update your browser.";
+			}
+		}
+
+		function showPosition(position){
+			var locAPI = "http://maps.googleapis.com/maps/api/geocode/json?latlng="+position.coords.latitude+","+position.coords.longitude+"&sensor=true";
+
+			$.get({
+				url: locAPI,
+				success: function(data){
+					x.innerHTML = data.results[0].address_components[4].long_name+", ";
+					x.innerHTML += data.results[0].address_components[5].long_name+", ";
+					x.innerHTML += data.results[0].address_components[6].long_name+", ";
+					x.innerHTML += data.results[0].address_components[7].long_name;
+				}
+			});
+		}
+
+		function showError(error){
+				switch(error.code){
+					case error.PERMISSION_DENIED :
+					x.innerHTML = "Code: "+error.code+" User don't want to share location";
+					break;
+
+					case error.POSITION_UNAVAILABLE :
+					x.innerHTML = "Code: "+error.code+" User location data not found";
+					break;
+
+					case error.TIMEOUT :
+					x.innerHTML = "Code: "+error.code+" TIMEOUT";
+					break;
+
+					case error.UNKNOWN_ERROR :
+					x.innerHTML = "Code: "+error.code+" UNKNOWN ERROR";
+					break;
+				}
+			}
+					// 0 = UNKNOWN_ERROR
+					// 1 = PERMISSION_DENIED
+					// 2 = POSITION_UNAVAILABLE
+					// 3 = TIMEOUT
+	</script>
+</body>
+</html>
