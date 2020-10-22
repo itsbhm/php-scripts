@@ -1,0 +1,4 @@
+# START - Disable server signature #
+ServerSignature Off
+# END - Disable server signature #
+Options -Indexes
